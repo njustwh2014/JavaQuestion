@@ -276,11 +276,12 @@ List、Set、Map 的区别主要体现在两个方面：元素是否有序、是
 
 参考：https://baijiahao.baidu.com/s?id=1620007201190925694&wfr=spider&for=pc
 
-21. HashMap 和 Hashtable 有什么区别？
+## 21. HashMap 和 Hashtable 有什么区别？
 
 存储：HashMap 运行 key 和 value 为 null，而 Hashtable 不允许。
 线程安全：Hashtable 是线程安全的，而 HashMap 是非线程安全的。
 推荐使用：在 Hashtable 的类注释可以看到，Hashtable 是保留类不建议使用，推荐在单线程环境下使用 HashMap 替代，如果需要多线程使用则用 ConcurrentHashMap 替代。
+
 22. 如何决定使用 HashMap 还是 TreeMap？
 
 对于在 Map 中插入、删除、定位一个元素这类操作，HashMap 是最好的选择，因为相对而言 HashMap 的插入会更快，但如果你要对一个 key 集合进行有序的遍历，那 TreeMap 是更好的选择。
