@@ -1,11 +1,15 @@
 # JavaQuestion
 Java interview question set
-# 我的日常遇到的问题：
 
-## 1. 关于@AutoWired的注解使用。
+# <font color=#7FFFD4 face="黑体">我的日常遇到的问题：</font>
+
+## 0. 关于@AutoWired的注解使用。
 参考： https://blog.csdn.net/qq_28587263/article/details/75570745
 
-# Java 基础
+## 1. 关于Markdown字体设置.
+参考： https://blog.csdn.net/u010177286/article/details/50358720
+
+# <font color=#7FFFD4 face="黑体">Java基础</font>
 
 ##  1. JDK 和 JRE 有什么区别？
 
@@ -286,7 +290,7 @@ List、Set、Map 的区别主要体现在两个方面：元素是否有序、是
 线程安全：Hashtable 是线程安全的，而 HashMap 是非线程安全的。
 推荐使用：在 Hashtable 的类注释可以看到，Hashtable 是保留类不建议使用，推荐在单线程环境下使用 HashMap 替代，如果需要多线程使用则用 ConcurrentHashMap 替代。
 
-22. 如何决定使用 HashMap 还是 TreeMap？
+1.  如何决定使用 HashMap 还是 TreeMap？
 
 对于在 Map 中插入、删除、定位一个元素这类操作，HashMap 是最好的选择，因为相对而言 HashMap 的插入会更快，但如果你要对一个 key 集合进行有序的遍历，那 TreeMap 是更好的选择。
 
