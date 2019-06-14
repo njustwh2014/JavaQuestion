@@ -1,5 +1,9 @@
 # JavaQuestion
 Java interview question set
+# 我的日常遇到的问题：
+
+## 1. 关于@AutoWired的注解使用。
+参考： https://blog.csdn.net/qq_28587263/article/details/75570745
 
 # Java 基础
 

@@ -1,0 +1,111 @@
+{   
+    //background插件配置
+    "background.enabled": true,
+    "update.enableWindowsBackgroundUpdates": true,
+        "background.useDefault": false,
+        "background.customImages": [
+            "file:///E:/p2529346414.jpg"
+        ],
+        "background.style": {
+            "content": "''",
+            "pointer-events": "none",
+            "position": "absolute",
+            "z-index": "0",
+            "width": "100%",
+            "height": "100%",
+            "background-position": "100% 100%",
+            "background-repeat": "no-repeat",
+//             "background-size": "100%,100%",
+            "background-size":"contain",
+            "background-attachment":"fixed",
+            "background-size": "cover",
+            "opacity": 0.35    
+        },
+    
+    
+    
+    //editor.fontSize 设置
+    "editor.fontSize": 24,
+    // Specifies the color theme used in the workbench.
+  "workbench.colorTheme": "Monokai",
+    //latex配置
+    "latex-workshop.latex.recipes": [{
+    "name": "xelatex",
+    "tools": [
+        "xelatex"
+    ]
+  }, {
+    "name": "latexmk",
+    "tools": [
+        "latexmk"
+    ]
+  },
+  
+  {
+    "name": "xelatex -> bibtex -> xelatex*2",
+    "tools": [
+        "xelatex",
+        "bibtex",
+        "xelatex",
+        "xelatex"
+    ]
+  }
+  ],
+  "latex-workshop.latex.tools": [{
+  "name": "latexmk",
+  "command": "latexmk",
+  "args": [
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "-pdf",
+    "%DOC%"
+  ]
+  }, {
+  "name": "xelatex",
+  "command": "xelatex",
+  "args": [
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "%DOC%"
+  ]
+  }, {
+  "name": "pdflatex",
+  "command": "pdflatex",
+  "args": [
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "%DOC%"
+  ]
+  }, {
+  "name": "bibtex",
+  "command": "bibtex",
+  "args": [
+    "%DOCFILE%"
+  ]
+  }],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.clean.fileTypes": [
+  "*.aux",
+  "*.bbl",
+  "*.blg",
+  "*.idx",
+  "*.ind",
+  "*.lof",
+  "*.lot",
+  "*.out",
+  "*.toc",
+  "*.acn",
+  "*.acr",
+  "*.alg",
+  "*.glg",
+  "*.glo",
+  "*.gls",
+  "*.ist",
+  "*.fls",
+  "*.log",
+  "*.fdb_latexmk"
+  ],
+  }.
